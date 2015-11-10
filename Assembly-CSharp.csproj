@@ -90,6 +90,7 @@
      <Compile Include="Assets\Imported Assets\Utility\TimedObjectDestructor.cs" />
      <Compile Include="Assets\Imported Assets\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\Imported Assets\Utility\WaypointProgressTracker.cs" />
+     <Compile Include="Assets\_Scripts\PlayerShooting.cs" />
      <None Include="Assets\Imported Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Imported Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
  <Reference Include="UnityEngine.UI">
