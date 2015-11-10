@@ -58,14 +58,11 @@ public class PlayerShooting : MonoBehaviour {
 
 			RaycastHit hit;
 
-			Debug.DrawRay(this._transform.position, this._transform.forward);
 			if(Physics.Raycast(this._transform.position, this._transform.forward, out hit, 50f)) {
-				if(hit.transform.tag == "Barrel") {
+				if(hit.transform.CompareTag("Barrel")) {
 					Destroy(hit.transform.gameObject);
-					Instantiate(this.explosion);
-					this.explosion.transform.position = hit.point;
+					Instantiate(this.explosion, hit.point, Quaternion.identity);
 				}
-
 
 
 				//move impact particle system to location of ray hit
