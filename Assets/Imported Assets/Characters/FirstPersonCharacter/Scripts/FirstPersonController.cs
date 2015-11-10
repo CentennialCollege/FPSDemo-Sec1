@@ -28,6 +28,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
+		public Animator rifleAnimator;
+
         private Camera m_Camera;
         private bool m_Jump;
         private float m_YRotation;
@@ -206,6 +208,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
             float vertical = CrossPlatformInputManager.GetAxis("Vertical");
 
             bool waswalking = m_IsWalking;
+
+			//play aim animation when right-mouse button is clicked and held
+			if (CrossPlatformInputManager.GetButton ("Fire2")) {
+				this.rifleAnimator.SetBool ("Aim", true);
+			} else {
+				this.rifleAnimator.SetBool("Aim", false);
+			}
 
 #if !MOBILE_INPUT
             // On standalone builds, walk/run speed is modified by a key press.
