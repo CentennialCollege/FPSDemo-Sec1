@@ -11,6 +11,7 @@ public class PlayerShooting : MonoBehaviour {
 	public Animator rifleAnimator;
 	public AudioSource bulletFireSound;
 	public AudioSource bulletImpactSound;
+	public GameObject explosion;
 
 	// PRIVATE INSTANCE VARIABLES 
 	private GameObject[] _impacts;
@@ -59,6 +60,14 @@ public class PlayerShooting : MonoBehaviour {
 
 			Debug.DrawRay(this._transform.position, this._transform.forward);
 			if(Physics.Raycast(this._transform.position, this._transform.forward, out hit, 50f)) {
+				if(hit.transform.tag == "Barrel") {
+					Destroy(hit.transform.gameObject);
+					Instantiate(this.explosion);
+					this.explosion.transform.position = hit.point;
+				}
+
+
+
 				//move impact particle system to location of ray hit
 				this._impacts[this._currentImpact].transform.position = hit.point;
 				// play the particle effect (impact)
