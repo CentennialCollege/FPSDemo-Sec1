@@ -10,17 +10,22 @@ public class PlayerShooting : MonoBehaviour {
 	public GameObject impact;
 	public Animator rifleAnimator;
 	public AudioSource bulletFireSound;
+	public AudioSource bulletImpactSound;
 
 	// PRIVATE INSTANCE VARIABLES 
 	private GameObject[] _impacts;
 	private int _currentImpact = 0;
 	private int _maxImpacts = 5; 
+	private Transform _transform;
 
 	private bool _shooting = false;
 
 	// Use this for initialization
 	void Start () {
+		// reference to the gameObject's transform component
+		this._transform = gameObject.GetComponent<Transform> ();
 
+		// Object pool for impacts
 		this._impacts = new GameObject[this._maxImpacts];
 		for (int impactCount = 0; impactCount < this._maxImpacts; impactCount++) {
 			this._impacts[impactCount] = (GameObject) Instantiate(this.impact);
@@ -47,5 +52,26 @@ public class PlayerShooting : MonoBehaviour {
 
 	// Physics effects
 	void FixedUpdate() {
+		if (this._shooting) {
+			this._shooting = false;
+
+			RaycastHit hit;
+
+			Debug.DrawRay(this._transform.position, this._transform.forward);
+			if(Physics.Raycast(this._transform.position, this._transform.forward, out hit, 50f)) {
+				//move impact particle system to location of ray hit
+				this._impacts[this._currentImpact].transform.position = hit.point;
+				// play the particle effect (impact)
+				this._impacts[this._currentImpact].GetComponent<ParticleSystem>().Play();
+				// play impact sound
+				this.bulletImpactSound.Play();
+
+				// ensure that you don't go out of bounds of the object pool
+				if(++this._currentImpact >= this._maxImpacts) {
+					this._currentImpact = 0;
+				}
+
+			}
+		}
 	}
 }
