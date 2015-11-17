@@ -60,6 +60,15 @@
      <Compile Include="Assets\Imported Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
      <Compile Include="Assets\Imported Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
      <Compile Include="Assets\Imported Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\Imported Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
+     <Compile Include="Assets\Imported Assets\Environment\Water\Water\Scripts\Displace.cs" />
+     <Compile Include="Assets\Imported Assets\Environment\Water\Water\Scripts\GerstnerDisplace.cs" />
+     <Compile Include="Assets\Imported Assets\Environment\Water\Water\Scripts\MeshContainer.cs" />
+     <Compile Include="Assets\Imported Assets\Environment\Water\Water\Scripts\PlanarReflection.cs" />
+     <Compile Include="Assets\Imported Assets\Environment\Water\Water\Scripts\SpecularLighting.cs" />
+     <Compile Include="Assets\Imported Assets\Environment\Water\Water\Scripts\Water.cs" />
+     <Compile Include="Assets\Imported Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
+     <Compile Include="Assets\Imported Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
      <Compile Include="Assets\Imported Assets\FPSEffects\Scripts\FPS_Effects\FPS_BulletImpacts.cs" />
      <Compile Include="Assets\Imported Assets\FPSEffects\Scripts\FPS_Effects\GlobalDefines.cs" />
      <Compile Include="Assets\Imported Assets\FPSEffects\Scripts\FPS_Effects\SelfDestruct.cs" />
@@ -89,8 +98,13 @@
      <Compile Include="Assets\Imported Assets\Utility\WaypointProgressTracker.cs" />
      <Compile Include="Assets\_Scripts\GameController.cs" />
      <Compile Include="Assets\_Scripts\PlayerShooting.cs" />
+     <None Include="Assets\Imported Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
+     <None Include="Assets\Imported Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
      <None Include="Assets\Imported Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Imported Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
      <None Include="Assets\Imported Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+     <None Include="Assets\Imported Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Imported Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
