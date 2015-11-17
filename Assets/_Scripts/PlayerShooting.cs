@@ -12,6 +12,7 @@ public class PlayerShooting : MonoBehaviour {
 	public AudioSource bulletFireSound;
 	public AudioSource bulletImpactSound;
 	public GameObject explosion;
+	public GameController gameController;
 
 	// PRIVATE INSTANCE VARIABLES 
 	private GameObject[] _impacts;
@@ -62,6 +63,7 @@ public class PlayerShooting : MonoBehaviour {
 				if(hit.transform.CompareTag("Barrel")) {
 					Destroy(hit.transform.gameObject);
 					Instantiate(this.explosion, hit.point, Quaternion.identity);
+					gameController.AddScore(100); // add 100 points
 				}
 
 

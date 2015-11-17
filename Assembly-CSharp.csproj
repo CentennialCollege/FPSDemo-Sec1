@@ -63,9 +63,6 @@
      <Compile Include="Assets\Imported Assets\FPSEffects\Scripts\FPS_Effects\FPS_BulletImpacts.cs" />
      <Compile Include="Assets\Imported Assets\FPSEffects\Scripts\FPS_Effects\GlobalDefines.cs" />
      <Compile Include="Assets\Imported Assets\FPSEffects\Scripts\FPS_Effects\SelfDestruct.cs" />
-     <Compile Include="Assets\Imported Assets\FPSEffects\Scripts\GameController.cs" />
-     <Compile Include="Assets\Imported Assets\FPSEffects\Scripts\controller.cs" />
-     <Compile Include="Assets\Imported Assets\FPSEffects\Scripts\explode.cs" />
      <Compile Include="Assets\Imported Assets\FPSEffects\Scripts\explosion_light.cs" />
      <Compile Include="Assets\Imported Assets\Utility\ActivateTrigger.cs" />
      <Compile Include="Assets\Imported Assets\Utility\AutoMobileShaderSwitch.cs" />
@@ -90,6 +87,7 @@
      <Compile Include="Assets\Imported Assets\Utility\TimedObjectDestructor.cs" />
      <Compile Include="Assets\Imported Assets\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\Imported Assets\Utility\WaypointProgressTracker.cs" />
+     <Compile Include="Assets\_Scripts\GameController.cs" />
      <Compile Include="Assets\_Scripts\PlayerShooting.cs" />
      <None Include="Assets\Imported Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Imported Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
