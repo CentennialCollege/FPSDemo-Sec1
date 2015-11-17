@@ -5,6 +5,8 @@ Project("{7D7CB2C1-FD0D-F85F-AC86-3F9BD913F100}") = "FPSDemo-Sec1", "Assembly-CS
 EndProject
 Project("{7D7CB2C1-FD0D-F85F-AC86-3F9BD913F100}") = "FPSDemo-Sec1", "Assembly-CSharp-Editor.csproj", "{99F93627-1A94-3CCF-2CF5-1DBF8B2A6A68}"
 EndProject
+Project("{7D7CB2C1-FD0D-F85F-AC86-3F9BD913F100}") = "FPSDemo-Sec1", "Assembly-UnityScript.unityproj", "{C65B8759-4C0C-68DF-DA9E-CDF661EBD657}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{99F93627-1A94-3CCF-2CF5-1DBF8B2A6A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99F93627-1A94-3CCF-2CF5-1DBF8B2A6A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99F93627-1A94-3CCF-2CF5-1DBF8B2A6A68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C65B8759-4C0C-68DF-DA9E-CDF661EBD657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C65B8759-4C0C-68DF-DA9E-CDF661EBD657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C65B8759-4C0C-68DF-DA9E-CDF661EBD657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C65B8759-4C0C-68DF-DA9E-CDF661EBD657}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
